@@ -1,0 +1,18 @@
+[
+    {
+        "key": "WHEEL_UP",
+        "command": ["script-binding", "file_browser/dynamic/scroll_up"]
+    },
+    {
+        "key": "WHEEL_DOWN",
+        "command": ["script-binding", "file_browser/dynamic/scroll_down"]
+    },
+    {
+        "key": "MBTN_RIGHT",
+        "command": ["script-binding", "file_browser/dynamic/close"]
+    },
+    {
+        "key": "MBTN_LEFT_DBL",
+        "command": ["script-binding", "file_browser/dynamic/play"]
+    }
+]

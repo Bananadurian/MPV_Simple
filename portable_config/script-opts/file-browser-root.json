@@ -1,0 +1,9 @@
+[
+    { "ass": "{\\c&H33D9FF&}Favourites", "name": "Favourites/"},
+    { "label": "D:12_MVLib", "name": "D:12_MVLib", "type": "dir", "path": "D:/12_MVLib/"},
+    { "label": "D:13_MovieLib", "name": "D:13_MovieLib", "type": "dir", "path": "D:/13_MovieLib/"},
+    { "label": "E:13_MovieLib", "name": "E:13_MovieLib", "type": "dir", "path": "E:/13_MovieLib/"},
+    { "label": "F:13_MovieLib", "name": "F:13_MovieLib", "type": "dir", "path": "F:/13_MovieLib/"},
+    { "label": "D:11_MusicLib", "name": "D:11_MusicLib", "type": "dir", "path": "D:/11_MusicLib/"},
+    { "ass": "{\\c&H39DBBE&}LG-GRAM", "name": "LG-GRAM", "type": "dir", "path": "//lg-gram/Movie/"}
+]
