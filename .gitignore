@@ -1,0 +1,6 @@
+# cache
+portable_config/cache/
+# play history
+portable_config/files/recent.json
+# custom playlist
+portable_config/playlists/
