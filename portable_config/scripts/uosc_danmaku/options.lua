@@ -1,0 +1,70 @@
+local opt = require("mp.options")
+
+-- 选项
+options = {
+    -- 指定弹幕服务器地址，自定义服务需兼容 dandanplay 的 api
+    api_server = "https://api.dandanplay.net",
+    -- 指定 b 站和爱腾优的弹幕获取的兜底服务器地址，主要用于获取非动画弹幕
+    -- 服务器可以自托管：https://github.com/lyz05/danmaku
+    fallback_server = "https://fc.lyz05.cn",
+    -- 设置 tmdb 的 API Key，用于获取非动画条目的中文信息(当搜索内容非中文时)
+    -- 请在 https://www.themoviedb.org 注册后去个人账号设置界面获取
+    tmdb_api_key= "",
+    load_more_danmaku = false,
+    auto_load = false,
+    autoload_local_danmaku = false,
+    autoload_for_url = false,
+    save_danmaku = false,
+    user_agent = "mpv_danmaku/1.0",
+    proxy = "",
+    -- 使用 fps 视频滤镜，大幅提升弹幕平滑度。默认禁用
+    vf_fps = false,
+    -- 设置要使用的 fps 滤镜参数
+    fps = "60/1.001",
+    -- 透明度：0（不透明）到255（完全透明）
+    transparency = 0x30,
+    -- 指定合并重复弹幕的时间间隔的容差值，单位为秒。默认值: -1，表示禁用
+    merge_tolerance = -1,
+    -- 指定 DanmakuFactory 程序的路径，支持绝对路径和相对路径
+    -- 留空（默认值）会在脚本同目录的 bin 中查找
+    -- 示例：DanmakuFactory_Path = 'DanmakuFactory' 会在环境变量 PATH 中或 mpv 程序旁查找该程序
+    DanmakuFactory_Path = "",
+    -- 指定弹幕关联历史记录文件的路径，支持绝对路径和相对路径
+    history_path = "~~/danmaku-history.json",
+    open_search_danmaku_menu_key = "Ctrl+d",
+    show_danmaku_keyboard_key = "j",
+    -- 中文简繁转换。0-不转换，1-转换为简体，2-转换为繁体
+    chConvert = 0,
+    -- 指定 OpenCC 程序的路径，支持绝对路径和相对路径
+    -- 留空（默认值）会在脚本同目录的 bin 中查找
+    -- 示例：OpenCC_Path = 'opencc' 会在环境变量 PATH 中或 mpv 程序旁查找该程序
+    OpenCC_Path = "",
+    --速度
+    scrolltime = "15",
+    --字体
+    fontname = "sans-serif",
+    --大小 
+    fontsize = "50",
+    --阴影
+    shadow = "0",
+    --粗体 true false
+    bold = "true",
+    --弹幕密度 整数(>=-1) -1：表示不重叠 0：表示无限制 其他表示限定条数
+    density = "0.0",
+    --全部弹幕的显示范围(0.0-1.0)
+    displayarea = "0.85",
+    --描边 0-4
+    outline = "1.0",
+    -- 指定不会显示在屏幕上的弹幕类型。使用“-”连接类型名称，例如“L2R-TOP-BOTTOM”。可用的类型包括：L2R,R2L,TOP,BOTTOM,SPECIAL,COLOR,REPEAT
+    blockmode = "",
+    --指定弹幕屏蔽词文件路径(black.txt)，支持绝对路径和相对路径。文件内容以换行分隔
+    blacklist_path = "",
+    --指定脚本相关消息显示的消息的对齐方式
+    message_anlignment = 7,
+    --指定脚本相关消息显示的消息的x轴坐标
+    message_x = 30,
+    --指定脚本相关消息显示的消息的y轴坐标
+    message_y = 30,
+}
+
+opt.read_options(options, mp.get_script_name(), function() end)
