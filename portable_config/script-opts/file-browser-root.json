@@ -5,5 +5,6 @@
     { "label": "E:13_MovieLib", "name": "E:13_MovieLib", "type": "dir", "path": "E:/13_MovieLib/"},
     { "label": "F:13_MovieLib", "name": "F:13_MovieLib", "type": "dir", "path": "F:/13_MovieLib/"},
     { "label": "D:11_MusicLib", "name": "D:11_MusicLib", "type": "dir", "path": "D:/11_MusicLib/"},
+    {"label": "C:Videos", "name": "C:Videos", "type": "dir", "path": "C:/Users/XYSRe/Videos/"},
     { "ass": "{\\c&H39DBBE&}LG-GRAM", "name": "LG-GRAM", "type": "dir", "path": "//lg-gram/Movie/"}
 ]
